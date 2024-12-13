@@ -1,0 +1,98 @@
+/* BookDetail.css */
+
+/* Main container for centering the content */
+.book-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);  
+  height: 100vh;  
+  overflow: hidden;  
+}
+
+/* Book detail card */
+.book-detail-card {
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px; 
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  height: auto;  
+  box-sizing: border-box;  
+}
+
+/* Hover effect on card */
+.book-detail-card:hover {
+  transform: translateY(-10px);  
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Book title styling */
+.book-title {
+  font-size: 2.5rem;
+  color: #4a90e2;  
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+/* General paragraph styling */
+.book-detail-card p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: left;
+}
+
+.book-detail-card p strong {
+  color: #4a90e2;  
+}
+
+/* Price styling */
+.book-detail-card .price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #e53935;  
+  margin-top: 20px;
+}
+
+/* Description with italics and background highlight */
+.book-detail-card .description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 20px;
+  font-style: italic;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .book-detail-container {
+    padding: 20px;
+  }
+
+  .book-detail-card {
+    padding: 20px;
+  }
+
+  .book-title {
+    font-size: 2rem;
+  }
+
+  .book-detail-card p {
+    font-size: 1rem;
+  }
+}

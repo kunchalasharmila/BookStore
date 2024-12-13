@@ -1,0 +1,129 @@
+/* General container styling for both Register and Login */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fa;
+}
+
+/* Form container for both Register and Login */
+.auth-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Header styling for both Register and Login */
+.auth-heading {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form elements (both Register and Login) */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 90%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Styling for labels (both Register and Login) */
+label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Input focus styling */
+.form-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Error messages styling */
+.error-text {
+  color: #dc3545;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Submit button styling for both Register and Login */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Links (for Register and Login) */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Link styling for already have an account or want to register */
+.register-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .auth-form {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .auth-heading {
+    font-size: 1.5rem;
+  }
+
+  .form-input {
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+  }
+}
+
+/* Success and error message styling */
+.success-text {
+  color: #28a745;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+

@@ -1,0 +1,136 @@
+/* BookList.css */
+
+/* Main container for the books list */
+.books-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);  /* Bright colorful gradient */
+  min-height: 100vh;
+  position: relative; /* Make the container position relative to place the logout button inside */
+}
+
+/* Heading for the books list */
+.books-list-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;  /* White text color */
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);  /* Subtle text shadow for effect */
+}
+
+/* Logout button styling */
+.logout-button {
+  background-color: #ff4e42;  /* Vibrant red background for logout */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 20px; /* Position it 20px from the top */
+  right: 20px; /* Position it 20px from the right */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.logout-button:hover {
+  background-color: #e43a2b;  /* Darker red for hover */
+  transform: scale(1.05);
+}
+
+.logout-button:focus {
+  outline: none;
+}
+
+/* Container for book cards */
+.book-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+/* Individual book card styling */
+.book-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;  /* Fix height for uniformity */
+  background: linear-gradient(135deg, #f5a623, #f9d423);  /* Colorful gradient background for cards */
+  color: #333;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+/* Hover effect on book card */
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of the book */
+.book-title {
+  font-size: 1.7rem;
+  color: #4a90e2;  /* Blue color */
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Author name styling */
+.book-author {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+/* View details link styling */
+.view-details {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  border: 2px solid #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.view-details:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .books-list-heading {
+    font-size: 2rem;
+  }
+
+  .book-cards {
+    grid-template-columns: 1fr 1fr;  /* Two columns layout on smaller screens */
+  }
+
+  .logout-button {
+    width: 100%;  /* Full width for logout button on small screens */
+  }
+}
